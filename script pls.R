@@ -109,6 +109,7 @@ arrow_lwd = 10 * round(Paths, 2)
 # arrows of different sizes reflecting the values of the path coeffs 
 plot(confidence_pls2, arr.pos = 0.35, arr.lwd = arrow_lwd, box.size = 0,2)
 # inner model 
+confidence_pls2$inner_model
 confidence_pls2$inner_summary
 # gof index 
 confidence_pls2$gof
