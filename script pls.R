@@ -117,4 +117,11 @@ confidence_pls2$gof
 confidence_pls_val = plspm(data, confidence_path, confidence_blocks2, modes = confidence_modes, boot.val = TRUE, br = 200)
 # bootstrap results
 confidence_pls_val$boot
+#Descriptivos
+Descriptivos <- read_excel("Descriptivos.xlsx")
+sd(Descriptivos$Edad)
+Genero_Factor <- factor(Descriptivos$`Indique su genero`, levels=c("Mujer", "Hombre"))
+(Genero_Factor)
+Estrato_Factor <- Factor <- factor(Descriptivos$Estratosoeconómico) 
+(Estrato_Factor)
 
